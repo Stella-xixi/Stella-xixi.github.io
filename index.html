@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人介绍与精选项目展示">
+  <title>Stella · Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <span class="brand-mark">S</span>
+      <span>Stella.dev</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#about">关于我</a>
+      <a href="#projects">项目</a>
+      <a class="nav-github" href="https://github.com/Stella-xixi" target="_blank" rel="noopener noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> OPEN TO NEW IDEAS</p>
+        <h1>你好，我是 <em>Stella</em>。<br>我用代码，把想法变成作品。</h1>
+        <p class="hero-description">
+          这里填写你的个人介绍：你是谁、正在专注什么，以及你希望通过技术解决怎样的问题。
+          保持两到三句话，能让访客快速认识你。
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">查看我的项目 <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="mailto:your-email@example.com">和我联系</a>
+        </div>
+      </div>
+      <div class="profile-card reveal" aria-label="个人信息卡片">
+        <div class="avatar-placeholder">
+          <span>YOUR<br>PHOTO</span>
+        </div>
+        <div class="profile-meta">
+          <div>
+            <span class="meta-label">BASED IN</span>
+            <strong>China</strong>
+          </div>
+          <div>
+            <span class="meta-label">FOCUS</span>
+            <strong>Web & Creative</strong>
+          </div>
+        </div>
+        <div class="status"><i></i> 正在创造有趣的东西</div>
+      </div>
+    </section>
+
+    <section class="about reveal" id="about">
+      <p class="section-number">01 / ABOUT</p>
+      <div>
+        <h2>持续学习，认真创造。</h2>
+        <p>
+          这里可以补充更完整的个人经历、技术方向与工作方式。你也可以写上熟悉的技术栈，
+          比如 HTML、CSS、JavaScript、React、Node.js 等。
+        </p>
+        <ul class="skill-list" aria-label="技能列表">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>UI Design</li>
+          <li>More +</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-number">02 / SELECTED WORK</p>
+          <h2>精选项目</h2>
+        </div>
+        <p>三个项目卡片均为模板内容，可直接替换图片、文字和链接。</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="project-image project-image-one" href="#" aria-label="打开项目一">
+            <span class="image-label">PROJECT IMAGE 01</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-index">01</div>
+            <h3>项目名称一</h3>
+            <p>在这里填写项目简介，简要说明它解决的问题、主要功能和你的贡献。</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-image project-image-two" href="#" aria-label="打开项目二">
+            <span class="image-label">PROJECT IMAGE 02</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-index">02</div>
+            <h3>项目名称二</h3>
+            <p>在这里填写项目简介，简要说明它解决的问题、主要功能和你的贡献。</p>
+            <div class="project-tags"><span>React</span><span>API</span><span>Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-image project-image-three" href="#" aria-label="打开项目三">
+            <span class="image-label">PROJECT IMAGE 03</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-index">03</div>
+            <h3>项目名称三</h3>
+            <p>在这里填写项目简介，简要说明它解决的问题、主要功能和你的贡献。</p>
+            <div class="project-tags"><span>Node.js</span><span>Web App</span><span>UX</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Stella. Built with curiosity.</p>
+    <div>
+      <a href="mailto:your-email@example.com">Email</a>
+      <a href="https://github.com/Stella-xixi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="#home">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
