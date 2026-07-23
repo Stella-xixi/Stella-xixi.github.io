@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="企业智能知识库问答系统案例详情">
+  <title>企业智能知识库问答系统｜Stella</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <header class="detail-topbar">
+    <a class="detail-logo" href="index.html#top">STELLA<span>.</span></a>
+    <a class="back-link" href="index.html#projects">← 返回项目经验</a>
+  </header>
+  <main class="detail-main">
+    <section class="detail-hero">
+      <p class="eyebrow">PROJECT 01 · RAG / KNOWLEDGE PRODUCT</p>
+      <h1>企业智能知识库问答系统</h1>
+      <p class="detail-summary">把企业内部的分散文档转化为可检索、可引用、可持续评测的知识问答服务，让每一次回答都有来源、可被验证。</p>
+      <div class="detail-actions">
+        <a class="primary" href="https://github.com/Stella-xixi?tab=repositories" target="_blank" rel="noopener noreferrer">查看 GitHub <span>↗</span></a>
+        <a href="index.html#projects">返回案例列表 <span>←</span></a>
+      </div>
+    </section>
+    <div class="detail-grid">
+      <aside class="detail-index"><span>CASE SNAPSHOT</span><p>项目类型：RAG 知识产品<br>负责范围：检索链路、问答服务、前端交互、评测<br>当前状态：案例展示页</p></aside>
+      <article class="detail-content">
+        <section><span class="section-no">01 / CHALLENGE</span><h2>项目背景</h2><p>企业资料分布在多个文档和系统中，人工查找耗时，通用模型又无法直接理解私有知识。项目目标是建立统一的知识入口，并确保回答可以追溯到原始资料。</p></section>
+        <section><span class="section-no">02 / SOLUTION</span><h2>解决方案</h2><p>系统对文档进行清洗、切分和向量化，结合关键词与向量混合检索召回候选内容，再通过重排序选择最相关上下文，最终生成带来源引用的回答。</p><ul class="detail-list"><li>知识入库：文档解析、分段、元数据与版本管理</li><li>检索生成：混合召回、重排序、上下文构建与流式回答</li><li>质量保障：评测集、召回记录、延迟监控与异常兜底</li></ul></section>
+        <section><span class="section-no">03 / RESULT</span><h2>项目价值</h2><p>缩短资料查找路径，让使用者不仅得到答案，还能快速回到原文核验；同时通过评测数据持续定位检索和生成链路中的质量问题。</p><div class="detail-tags"><span>RAG</span><span>Vector Database</span><span>FastAPI</span><span>React</span><span>Evaluation</span></div></section>
+      </article>
+    </div>
+  </main>
+  <footer class="detail-footer"><span>STELLA · PROJECT CASE</span><a href="index.html#projects">返回作品集 →</a></footer>
+</body>
+</html>

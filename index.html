@@ -1,203 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stella — AI 开发工程师个人主页">
-  <meta name="theme-color" content="#f7f8fa">
-  <title>Stella | AI Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stella｜AI 应用开发与 Agent 智能体开发求职简历">
+  <meta name="theme-color" content="#162033">
+  <title>Stella｜AI 应用开发 / Agent 智能体开发</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#home" aria-label="返回首页">
-        <span class="brand-mark">S</span>
-        <span>Stella <small>/ AI Developer</small></span>
-      </a>
-      <nav aria-label="主导航">
-        <a href="#about">关于</a><a href="#expertise">能力</a><a href="#projects">项目</a><a href="#contact">联系</a>
-      </nav>
-      <a class="resume-link" href="#" download>下载简历 <span>↓</span></a>
-    </div>
+  <header class="topbar">
+    <a class="logo" href="#top">STELLA<span>.</span></a>
+    <nav aria-label="页面导航">
+      <a href="#top">首页</a>
+      <a href="#projects">项目经验</a>
+      <a href="#skills">专业技能</a>
+      <a href="#about">个人优势</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <a class="top-contact" href="mailto:your-email@example.com">联系我 ↗</a>
   </header>
 
-  <main>
-    <section class="hero page-shell" id="home">
-      <div class="hero-copy reveal">
-        <div class="availability"><i></i> OPEN TO AI DEVELOPMENT ROLES</div>
-        <p class="hero-label">AI APPLICATION · FRONTEND ENGINEERING</p>
-          <h1>让模型能力，走向<span>可落地的 AI 应用。</span></h1>
-        <p class="hero-intro">
-          你好，我是 Stella，求职方向为 AI 应用开发 / Agent 开发工程师。
-          我专注于将大语言模型、知识库与工具调用组合成稳定的智能工作流，并通过前端工程把复杂能力转化为清晰、可控的产品体验。
-        </p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-main reveal">
+        <p class="status"><i></i> OPEN TO WORK · 2026</p>
+        <p class="role">AI APPLICATION DEVELOPER / AGENT ENGINEER</p>
+        <h1>Stella</h1>
+        <h2>AI 应用开发<br><span>& Agent 智能体开发</span></h2>
+        <p class="summary">专注于将大语言模型、知识库和工具调用能力，组合成稳定、可解释、可落地的 AI 应用。能够独立完成从需求拆解、Agent 工作流设计到前后端交付的完整开发流程。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#projects">查看代表项目 <span>↘</span></a>
-          <a class="button secondary" href="mailto:your-email@example.com">your-email@example.com</a>
+          <a class="primary-button" href="#projects">查看项目证据 <span>↓</span></a>
+          <a class="text-button" href="mailto:your-email@example.com">your-email@example.com ↗</a>
         </div>
       </div>
 
-      <aside class="profile-panel reveal" aria-label="候选人信息">
-        <div class="profile-top">
-          <span>CANDIDATE PROFILE</span><span>2026</span>
-        </div>
-        <div class="portrait"><span>PHOTO<br>PLACEHOLDER</span></div>
-        <div class="profile-name"><h2>Stella</h2><p>AI Developer</p></div>
+      <aside class="candidate-card reveal" aria-label="候选人信息摘要">
+        <div class="card-head"><span>CANDIDATE SNAPSHOT</span><b>01</b></div>
         <dl>
-          <div><dt>方向</dt><dd>AI 应用 / Agent 开发</dd></div>
-          <div><dt>优势</dt><dd>Agent 工程 × 产品体验</dd></div>
-          <div><dt>地点</dt><dd>China · Remote Ready</dd></div>
+          <div><dt>求职方向</dt><dd>AI 应用 / Agent 开发</dd></div>
+          <div><dt>核心优势</dt><dd>Agent 工程 × 产品体验</dd></div>
+          <div><dt>技术主线</dt><dd>Python / FastAPI / React</dd></div>
+          <div><dt>工作方式</dt><dd>目标导向 · 快速验证 · 完整交付</dd></div>
+          <div><dt>工作地点</dt><dd>China · Remote Ready</dd></div>
         </dl>
+        <div class="card-note">
+          <span>WHY ME</span>
+          <p>不仅能调用模型 API，更关注任务成功率、结果可信度和真实用户体验。</p>
+        </div>
       </aside>
     </section>
 
-    <section class="metrics">
-      <div class="page-shell metric-grid reveal">
-        <div><strong>03</strong><span>代表项目</span></div>
-        <div><strong>10+</strong><span>核心技术栈</span></div>
-        <div><strong>100%</strong><span>端到端交付</span></div>
-        <div><strong id="local-time">--:--</strong><span>当前本地时间 · CST</span></div>
-      </div>
+    <section class="proof-strip">
+      <div><strong>03</strong><span>完整 AI 项目</span></div>
+      <div><strong>端到端</strong><span>从架构到产品交付</span></div>
+      <div><strong>可评测</strong><span>关注质量、延迟与成本</span></div>
+      <div><strong>可控</strong><span>重试、兜底与人工确认</span></div>
     </section>
 
-    <section class="about page-shell" id="about">
-      <div class="section-aside reveal"><span>01</span><p>PROFILE</p></div>
-      <div class="about-main reveal">
-        <p class="lead">我不只调用模型 API，更关注 Agent 如何理解任务、选择工具、管理上下文，并稳定完成目标。</p>
-        <div class="about-detail">
-          <p>我能够从业务场景出发拆解任务边界，设计 Prompt、知识检索、结构化输出与工具接口，并将单次模型调用扩展为可维护、可评估的 AI 应用。</p>
-          <p>我的工作方式强调快速验证、清晰架构与产品意识。在实现 Agent 能力的同时，也重视响应延迟、失败重试、人工确认、日志追踪与用户信任。</p>
-        </div>
-      </div>
-    </section>
+    <section class="projects section-shell" id="projects">
+      <header class="section-header reveal">
+        <div><span>01</span><p>PROJECT EXPERIENCE</p></div>
+        <h2>项目不是功能清单，<br>而是解决问题的证据。</h2>
+      </header>
 
-    <section class="expertise" id="expertise">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-aside"><span>02</span><p>EXPERTISE</p></div>
-          <div><p class="overline">CORE CAPABILITIES</p><h2>从模型能力到产品体验</h2></div>
-        </div>
-        <div class="capability-grid">
-          <article class="capability reveal">
-            <span class="cap-number">01</span>
-            <div class="cap-icon">AI</div>
-            <h3>LLM 应用开发</h3>
-            <p>围绕真实业务问题完成模型选型、Prompt 设计、RAG 检索、结构化输出与服务集成。</p>
-            <ul><li>模型接入与能力评估</li><li>上下文、检索与引用设计</li><li>结果校验与质量评测</li></ul>
-          </article>
-          <article class="capability reveal">
-            <span class="cap-number">02</span>
-            <div class="cap-icon">&lt;/&gt;</div>
-            <h3>Agent 系统开发</h3>
-            <p>设计可调用工具、管理状态并进行多步骤推理的 Agent，让复杂任务具备可控执行路径。</p>
-            <ul><li>Tool Calling 与任务编排</li><li>Memory 与上下文管理</li><li>重试、兜底与人工确认</li></ul>
-          </article>
-          <article class="capability reveal">
-            <span class="cap-number">03</span>
-            <div class="cap-icon">API</div>
-            <h3>AI 产品工程</h3>
-            <p>打通后端服务与前端体验，以流式响应、过程反馈和异常状态提升 AI 产品可用性。</p>
-            <ul><li>Python / FastAPI / React</li><li>流式 UI 与状态可视化</li><li>部署、监控与持续迭代</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects page-shell" id="projects">
-      <div class="section-head reveal">
-        <div class="section-aside"><span>03</span><p>PROJECTS</p></div>
-        <div><p class="overline">SELECTED WORK</p><h2>代表项目与工程实践</h2></div>
-      </div>
-      <div class="project-list">
-        <article class="project-card reveal">
-          <a class="project-cover cover-one" href="#" aria-label="查看智能知识库项目">
-            <span class="project-status">FEATURED</span>
-            <div class="ui-window">
-              <div class="ui-sidebar"><b></b><i></i><i></i><i></i></div>
-              <div class="ui-main"><div class="ui-question"></div><div class="ui-answer"><b></b><span></span><span></span><span></span></div></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-title"><span>01</span><h3>智能知识库问答系统</h3><a href="#">访问项目 ↗</a></div>
-            <p>面向企业文档的 RAG 问答系统，覆盖文档解析、分块、向量检索、重排序、答案生成与来源引用。支持流式回答和多轮上下文，并通过评测集持续优化召回质量。</p>
-            <div class="tags"><span>RAG</span><span>Vector DB</span><span>FastAPI</span><span>React</span></div>
+      <article class="case featured reveal">
+        <div class="case-aside">
+          <span class="case-no">PROJECT 01 / FEATURED</span>
+          <div class="mini-ui knowledge-ui">
+            <div class="ui-side"><i></i><i></i><i></i></div>
+            <div class="ui-body"><b>ASK YOUR KNOWLEDGE</b><h3>企业知识<br>随问随得</h3><span></span><span></span><small>3 SOURCES FOUND</small></div>
           </div>
-        </article>
-
-        <article class="project-card reveal">
-          <a class="project-cover cover-two" href="#" aria-label="查看 AI 工作流项目">
-            <span class="project-status">CASE STUDY</span>
-            <div class="flow-demo"><i>INPUT</i><b>01</b><span></span><b>02</b><span></span><b>03</b><i>OUTPUT</i></div>
-          </a>
-          <div class="project-body">
-            <div class="project-title"><span>02</span><h3>多工具 Agent 任务助手</h3><a href="#">访问项目 ↗</a></div>
-            <p>能够理解目标、制定执行步骤并自主选择工具的 Agent 应用。通过状态图管理任务流程，集成搜索、数据库与业务 API，并为高风险动作加入人工确认和失败恢复机制。</p>
-            <div class="tags"><span>Agent</span><span>Tool Calling</span><span>LangGraph</span><span>Python</span></div>
+        </div>
+        <div class="case-content">
+          <div class="case-title"><p>RAG · KNOWLEDGE PRODUCT</p><h3>企业智能知识库问答系统</h3></div>
+          <p class="case-intro">面向企业内部文档的可信问答系统，覆盖知识入库、检索、重排、回答生成与来源引用。</p>
+          <div class="case-evidence">
+            <div><span>业务问题</span><p>文档分散、查找耗时，通用模型无法回答企业私有知识，回答来源难以验证。</p></div>
+            <div><span>我的工作</span><p>设计文档切分与混合检索链路；接入重排序和引用定位；实现流式问答、多轮上下文和异常状态。</p></div>
+            <div><span>工程重点</span><p>使用评测集持续检查召回质量，记录延迟与检索轨迹，让答案质量可以被分析和优化。</p></div>
           </div>
-        </article>
-
-        <article class="project-card reveal">
-          <a class="project-cover cover-three" href="#" aria-label="查看数据洞察项目">
-            <span class="project-status">PRODUCT</span>
-            <div class="chart-demo"><span style="--h:35%"></span><span style="--h:58%"></span><span style="--h:44%"></span><span style="--h:82%"></span><span style="--h:66%"></span><span style="--h:94%"></span></div>
-          </a>
-          <div class="project-body">
-            <div class="project-title"><span>03</span><h3>AI 数据分析 Agent</h3><a href="#">访问项目 ↗</a></div>
-            <p>通过自然语言完成数据查询、分析规划、代码执行与图表生成。前端展示 Agent 的执行阶段、工具输入和中间结果，让复杂分析过程透明、可追踪且便于修正。</p>
-            <div class="tags"><span>Data Agent</span><span>Code Execution</span><span>Visualization</span><span>TypeScript</span></div>
+          <div class="case-actions">
+            <a class="case-detail-link" href="project-rag.html">查看案例详情 <span>→</span></a>
+            <a class="case-github-link" href="https://github.com/Stella-xixi?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
           </div>
-        </article>
+          <ul class="tags"><li>RAG</li><li>Vector Database</li><li>FastAPI</li><li>React</li><li>Evaluation</li></ul>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-aside">
+          <span class="case-no">PROJECT 02</span>
+          <div class="mini-ui agent-ui">
+            <div class="agent-center">GOAL</div>
+            <i class="p1">PLAN</i><i class="p2">SEARCH</i><i class="p3">ACT</i><i class="p4">CHECK</i>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-title"><p>AGENT · TOOL CALLING</p><h3>多工具 Agent 任务助手</h3></div>
+          <p class="case-intro">理解用户目标、规划执行步骤并自主选择工具，用可控的工作流完成多阶段任务。</p>
+          <div class="case-evidence">
+            <div><span>核心设计</span><p>用状态图管理任务阶段，集成搜索、数据库与业务 API，并对工具参数进行结构化约束。</p></div>
+            <div><span>可靠性</span><p>为高风险动作加入人工确认；通过超时、重试、降级与中断恢复降低执行失败率。</p></div>
+          </div>
+          <div class="case-actions">
+            <a class="case-detail-link" href="project-agent.html">查看案例详情 <span>→</span></a>
+            <a class="case-github-link" href="https://github.com/Stella-xixi?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          </div>
+          <ul class="tags"><li>LangGraph</li><li>Tool Calling</li><li>Python</li><li>Human-in-the-loop</li></ul>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-aside">
+          <span class="case-no">PROJECT 03</span>
+          <div class="mini-ui data-ui">
+            <div><span>INSIGHT</span><b>+24.8%</b></div>
+            <div class="bars"><i style="--h:34%"></i><i style="--h:48%"></i><i style="--h:43%"></i><i style="--h:70%"></i><i style="--h:58%"></i><i style="--h:88%"></i></div>
+            <p>“找出增长最快的业务线”</p>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="case-title"><p>DATA AGENT · VISUALIZATION</p><h3>AI 数据分析 Agent</h3></div>
+          <p class="case-intro">通过自然语言完成数据查询、分析规划、代码执行和图表生成，让业务人员直接获得可解释的数据洞察。</p>
+          <div class="case-evidence">
+            <div><span>产品体验</span><p>在前端展示执行阶段、工具输入和中间结果，让复杂分析过程透明、可追踪、便于修正。</p></div>
+            <div><span>安全边界</span><p>限制代码执行环境与数据权限，对生成查询进行校验，避免危险操作和错误结果扩散。</p></div>
+          </div>
+          <div class="case-actions">
+            <a class="case-detail-link" href="project-data-agent.html">查看案例详情 <span>→</span></a>
+            <a class="case-github-link" href="https://github.com/Stella-xixi?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          </div>
+          <ul class="tags"><li>Data Agent</li><li>Code Execution</li><li>TypeScript</li><li>Visualization</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-shell">
+        <header class="section-header light reveal">
+          <div><span>02</span><p>TECHNICAL SKILLS</p></div>
+          <h2>与岗位直接相关的<br>技术能力。</h2>
+        </header>
+        <div class="skill-grid">
+          <article class="reveal"><div class="skill-card-title"><span>01</span><h3>AI 应用开发</h3></div><p>模型接入、Prompt 设计、结构化输出、RAG、检索与重排、答案引用、模型评测</p></article>
+          <article class="reveal"><div class="skill-card-title"><span>02</span><h3>Agent 智能体</h3></div><p>Tool Calling、任务编排、状态管理、Memory、Human-in-the-loop、失败恢复</p></article>
+          <article class="reveal"><div class="skill-card-title"><span>03</span><h3>应用工程</h3></div><p>Python、FastAPI、React、TypeScript、Streaming UI、REST API、SQL</p></article>
+          <article class="reveal"><div class="skill-card-title"><span>04</span><h3>工程质量</h3></div><p>测试、日志、可观测性、性能与成本分析、Docker、CI/CD、云端部署</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="agent-process">
-      <div class="page-shell">
-        <div class="section-head reveal">
-          <div class="section-aside"><span>04</span><p>APPROACH</p></div>
-          <div><p class="overline">AGENT ENGINEERING</p><h2>我的 Agent 开发方法</h2></div>
-        </div>
-        <div class="process-grid">
-          <article class="reveal"><span>01</span><h3>明确任务边界</h3><p>从业务目标、输入输出与风险开始，判断应使用确定性流程还是 Agent 自主决策。</p></article>
-          <article class="reveal"><span>02</span><h3>设计工具与状态</h3><p>定义职责单一、参数清晰的工具接口，并规划短期上下文、长期记忆与状态流转。</p></article>
-          <article class="reveal"><span>03</span><h3>建立安全护栏</h3><p>通过结构化输出、权限控制、超时重试和人工确认，降低幻觉与错误操作风险。</p></article>
-          <article class="reveal"><span>04</span><h3>评测与持续优化</h3><p>记录执行轨迹、延迟、成本和任务成功率，使用真实案例评测并定位系统瓶颈。</p></article>
-        </div>
+    <section class="about section-shell" id="about">
+      <header class="section-header reveal">
+        <div><span>03</span><p>WORKING STYLE</p></div>
+        <h2>我如何把 AI 原型，<br>推进到可交付产品。</h2>
+      </header>
+      <div class="process">
+        <article class="reveal"><b>01</b><div><h3>先定义成功</h3><p>明确用户、任务边界、输入输出和评价指标，避免为了使用 Agent 而使用 Agent。</p></div></article>
+        <article class="reveal"><b>02</b><div><h3>小步验证链路</h3><p>先验证最关键的模型或检索能力，再扩展状态、工具与完整交互。</p></div></article>
+        <article class="reveal"><b>03</b><div><h3>设计失败路径</h3><p>把超时、错误结果、权限和人工介入作为产品流程的一部分。</p></div></article>
+        <article class="reveal"><b>04</b><div><h3>用真实案例评测</h3><p>记录质量、延迟、成本与执行轨迹，持续定位并优化系统瓶颈。</p></div></article>
       </div>
     </section>
 
-    <section class="stack page-shell">
-      <div class="section-aside reveal"><span>05</span><p>STACK</p></div>
-      <div class="stack-main reveal">
-        <p class="overline">TECHNOLOGY STACK</p>
-        <div class="stack-groups">
-          <div><h3>AI / Agent</h3><p>Python · LangChain · LangGraph · RAG · Tool Calling · Prompt Engineering · Model Evaluation</p></div>
-          <div><h3>Application</h3><p>FastAPI · React · TypeScript · Streaming UI · REST API · Vector Database · SQL</p></div>
-          <div><h3>Engineering</h3><p>Git · Docker · Testing · Logging · Observability · CI/CD · Cloud Deployment</p></div>
-        </div>
+    <section class="contact" id="contact" data-nav-section>
+      <div class="contact-intro">
+        <p class="contact-status"><i></i> OPEN TO OPPORTUNITIES · 2026</p>
+        <h2>
+          <span>让 AI 落地，</span>
+          <span>让价值发生<em>。</em></span>
+        </h2>
+        <p class="contact-copy">期待加入重视产品价值与工程质量的团队，把技术能力转化为稳定、可信、真正有人使用的产品。</p>
       </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="page-shell reveal">
-        <p class="overline">LET’S BUILD SOMETHING USEFUL</p>
-        <h2>期待让 Agent 能力，<br>在真实业务中稳定运行。</h2>
-        <div class="contact-actions">
-          <a href="mailto:your-email@example.com">发送邮件 <span>↗</span></a>
-          <a href="https://github.com/Stella-xixi" target="_blank" rel="noopener noreferrer">查看 GitHub <span>↗</span></a>
+      <aside class="contact-card" aria-label="联系方式">
+        <div class="contact-card-head"><span>CONTACT CARD</span><b>04</b></div>
+        <a class="contact-email" href="mailto:your-email@example.com">
+          <small>优先联系方式 / EMAIL</small>
+          <strong>your-email@example.com</strong>
+          <span>↗</span>
+        </a>
+        <a class="contact-github" href="https://github.com/Stella-xixi" target="_blank" rel="noopener noreferrer">
+          <span><small>GITHUB</small><strong>Stella-xixi</strong></span>
+          <b>查看代码与项目 ↗</b>
+        </a>
+        <div class="contact-meta">
+          <div><small>方向</small><strong>AI 应用 / Agent 开发</strong></div>
+          <div><small>工作方式</small><strong>Remote Ready</strong></div>
         </div>
-      </div>
+      </aside>
     </section>
   </main>
 
-  <footer class="page-shell">
-    <p>© <span id="year"></span> Stella · AI Developer</p>
-    <p>Designed & developed with intention.</p>
-    <a href="#home">返回顶部 ↑</a>
-  </footer>
+  <footer><span>© <span id="year"></span> Stella</span><span>CST <b id="local-time">--:--</b></span><a href="#top">返回顶部 ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
