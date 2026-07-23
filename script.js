@@ -1,7 +1,18 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const revealElements = document.querySelectorAll(".reveal");
+const timeElement = document.getElementById("local-time");
+function updateTime() {
+  timeElement.textContent = new Intl.DateTimeFormat("zh-CN", {
+    timeZone: "Asia/Shanghai",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).format(new Date());
+}
+updateTime();
+setInterval(updateTime, 30000);
 
+const revealElements = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -10,10 +21,9 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
-
+  }, { threshold: 0.1 });
   revealElements.forEach((element, index) => {
-    element.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
+    element.style.transitionDelay = `${Math.min(index * 35, 140)}ms`;
     observer.observe(element);
   });
 } else {
